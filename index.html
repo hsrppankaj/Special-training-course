@@ -1,86 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Master SEO with our comprehensive training course. Learn the latest SEO techniques and strategies to boost your website's search engine ranking.">
-    <meta name="keywords" content="SEO training, learn SEO, search engine optimization, SEO course, SEO certification">
-    <meta name="author" content="Your Company Name">
-    <title>SEO Training Course - Boost Your Website's Ranking</title>
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="SEO Training Course - Boost Your Website's Ranking">
-    <meta property="og:description" content="Enroll in our SEO training course and learn proven strategies to improve your site's search engine ranking.">
-    <meta property="og:image" content="seo-training-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com/seo-training">
-    
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Master SEO with our comprehensive training course. Learn the latest SEO techniques and strategies to boost your website's ranking." />
+  <meta name="keywords" content="SEO training, learn SEO, search engine optimization, SEO course, SEO certification" />
+  <meta name="author" content="Your Company Name" />
+  <title>SEO Training Course - Boost Your Website's Ranking</title>
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f8f8;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      list-style: none;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(120deg, #0078ff, #00c6ff);
+      color: #fff;
+      padding: 20px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    nav .logo a {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      max-width: 800px;
+      margin: 60px auto 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+    .cta-button {
+      background: #fff;
+      color: #0078ff;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background: #0078ff;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1000px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #0078ff;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2em;
+    }
+    section p, section ul {
+      font-size: 1em;
+      line-height: 1.7;
+    }
+
+    /* ===== BENEFITS ===== */
+    .benefits-section ul {
+      padding-left: 20px;
+    }
+    .benefits-section li {
+      margin-bottom: 12px;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section .testimonial {
+      background: #f2f9ff;
+      padding: 20px;
+      margin: 15px 0;
+      border-left: 4px solid #0078ff;
+      border-radius: 5px;
+    }
+    .testimonial p:last-child {
+      text-align: right;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* ===== ENROLL ===== */
+    .enroll-section {
+      text-align: center;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    footer ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    footer a {
+      color: #00c6ff;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h1 {
+        font-size: 2em;
+      }
+      section {
+        margin: 60px 15px;
+        padding: 30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">Your Logo</a>
-            </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
-            <h1>Become an SEO Expert with Our Training Course</h1>
-            <p>Boost your website's traffic and rank higher on search engines with proven SEO strategies.</p>
-            <a href="#enroll" class="cta-button">Enroll Now</a>
-        </section>
-    </header>
 
-    <section id="about" class="about-section">
-        <h2>About the SEO Training Course</h2>
-        <p>Our SEO training course is designed to help you master the skills necessary to optimize your website and improve its performance on search engines like Google, Bing, and Yahoo. Whether you're a beginner or looking to enhance your skills, this course covers the latest SEO techniques, tools, and strategies.</p>
+  <header>
+    <nav>
+      <div class="logo"><a href="#">SEO Mastery</a></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#enroll">Enroll</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h1>Become an SEO Expert Today</h1>
+      <p>Learn the latest SEO strategies to rank higher on Google and drive more traffic to your website.</p>
+      <a href="#enroll" class="cta-button">Enroll Now</a>
     </section>
+  </header>
 
-    <section id="benefits" class="benefits-section">
-        <h2>Why Choose Our SEO Training?</h2>
-        <ul>
-            <li><strong>Expert Instructors:</strong> Learn from industry-leading professionals with years of experience.</li>
-            <li><strong>Comprehensive Curriculum:</strong> Master on-page SEO, off-page SEO, technical SEO, link building, keyword research, and more.</li>
-            <li><strong>Practical Assignments:</strong> Hands-on exercises to apply what you've learned and improve real websites.</li>
-            <li><strong>Flexible Learning:</strong> Access the course at your own pace and from anywhere in the world.</li>
-            <li><strong>Certifications:</strong> Earn a recognized SEO certification upon completion of the course.</li>
-        </ul>
-    </section>
+  <section id="about" class="about-section">
+    <h2>About Our SEO Training</h2>
+    <p>Our comprehensive SEO course is designed for marketers, business owners, and students who want to master search engine optimization. Learn the latest on-page, off-page, and technical SEO strategies to increase website visibility and grow your online presence.</p>
+  </section>
 
-    <section id="testimonials" class="testimonials-section">
-        <h2>What Our Students Say</h2>
-        <div class="testimonial">
-            <p>"This course completely transformed the way I approach SEO. I saw an immediate improvement in my website’s search rankings. Highly recommend!"</p>
-            <p><strong>- John D., Digital Marketer</strong></p>
-        </div>
-        <div class="testimonial">
-            <p>"I gained practical SEO knowledge that I was able to apply right away. The instructors were knowledgeable and engaging!"</p>
-            <p><strong>- Sarah L., Small Business Owner</strong></p>
-        </div>
-    </section>
+  <section id="benefits" class="benefits-section">
+    <h2>Why Choose This SEO Course?</h2>
+    <ul>
+      <li><strong>✔ Expert Guidance:</strong> Learn from professionals with years of real-world SEO experience.</li>
+      <li><strong>✔ Practical Lessons:</strong> Hands-on projects to help you apply concepts instantly.</li>
+      <li><strong>✔ Latest Tools:</strong> Master keyword research, analytics, and optimization tools.</li>
+      <li><strong>✔ Flexible Learning:</strong> Study at your own pace, anytime and anywhere.</li>
+      <li><strong>✔ Certification:</strong> Receive a verified SEO certificate upon completion.</li>
+    </ul>
+  </section>
 
-    <section id="enroll" class="enroll-section">
-        <h2>Ready to Boost Your SEO Skills?</h2>
-        <p>Enroll today and take the first step towards mastering SEO. Unlock higher rankings and more traffic for your website!</p>
-        <a href="https://yourwebsite.com/enroll" class="cta-button">Enroll Now</a>
-    </section>
+  <section id="testimonials" class="testimonials-section">
+    <h2>What Students Say</h2>
+    <div class="testimonial">
+      <p>"I doubled my website traffic within 2 months after taking this course. The lessons were practical and easy to follow!"</p>
+      <p>- Emily R., Blogger</p>
+    </div>
+    <div class="testimonial">
+      <p>"As a business owner, this SEO training helped me understand how to make my site more visible. Highly recommend!"</p>
+      <p>- Mark T., Entrepreneur</p>
+    </div>
+  </section>
 
-    <footer id="contact" class="footer">
-        <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
-        <ul>
-            <li><a href="mailto:contact@yourwebsite.com">Email Us</a></li>
-            <li><a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a></li>
-            <li><a href="https://www.twitter.com/yourpage" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/yourpage" target="_blank">LinkedIn</a></li>
-        </ul>
-    </footer>
+  <section id="enroll" class="enroll-section">
+    <h2>Start Learning SEO Today</h2>
+    <p>Ready to rank higher on Google and grow your online presence? Enroll in our SEO Training Course now!</p>
+    <a href="#" class="cta-button">Join the Course</a>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 SEO Mastery. All Rights Reserved.</p>
+    <ul>
+      <li><a href="mailto:info@seomastery.com">Email</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>
